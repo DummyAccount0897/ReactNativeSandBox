@@ -4,9 +4,13 @@ import { Button, StyleSheet, View, TextInput, Text } from "react-native";
 const App = () => {
   const [textInputValue, setTextInputValue] = useState("Place holder");
 
+  const onPressButton = () => {
+    setTextInputValue("");
+  };
+
   return (
     <View style={styles.app}>
-      <Button onPress={() => {}} title="Example button" />
+      <Button onPress={() => onPressButton()} title="Clear text input" />
       <TextInput
         style={styles.textInput}
         value={textInputValue}
