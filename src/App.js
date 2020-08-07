@@ -14,6 +14,7 @@ class App extends Component {
 const styles = StyleSheet.create({
   app: {
     marginHorizontal: "auto",
+    marginVertical: 20,
     maxWidth: 500
   }
 });
